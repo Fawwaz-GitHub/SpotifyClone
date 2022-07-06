@@ -1,0 +1,71 @@
+.current-track{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.current-track-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+h4{
+    color: white;
+}
+
+h6{
+    color: #b3b3b3;
+}
+
+.track-play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;    
+}
+
+svg {
+    color: #b3b3b3;
+    transition: 0.2s ease-in-out;
+}
+
+svg:hover {
+    color: white;
+}
+
+.state > svg {
+    color: white;
+}
+
+.previous, .next, .state {
+    font-size: 2rem;
+}
+
+.volume-body{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.volume-input{
+    width: 15rem;
+    border-radius: 2rem;
+    height: 0.5rem;
+}
+
+.volume-input{
+    -webkit-appearance: none;
+    background-color: #b3b3b3;
+    background-image: linear-gradient(#b3b3b3,#b3b3b3);
+    background-repeat: none;
+}
+
+.volume-input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: white;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
